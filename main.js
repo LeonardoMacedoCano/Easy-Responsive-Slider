@@ -62,15 +62,15 @@ $('.slider').each(function() {
   }
   
   $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
+    var $btn = $('<a class="slideBtn">&bull;</a>');
     
     if (index === currentIndex) {
-      $button.addClass('active');
+      $btn.addClass('active');
     }
-    $button.on('click', function() {
+    $btn.on('click', function() {
       move(index);
-    }).appendTo('.slide_buttons');
-    bulletArray.push($button);
+    }).appendTo('.containerBtn');
+    bulletArray.push($btn);
   });
   
   advance();
