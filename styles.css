@@ -44,3 +44,10 @@ body {
 .slide:nth-of-type(3) {
   background: #0000ee;
 }
+
+.containerBtn {
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+}
