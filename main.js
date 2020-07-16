@@ -65,6 +65,14 @@ $('.slider').each(function() {
     animateLeft = '100%'; 
   }
   
+  $('.previousBtn').on('click', function() {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move($slides.length - 1);
+    }
+  });
+
   $.each($slides, function(index) {
     var $btn = $('<a class="slideBtn">&bull;</a>');
     
