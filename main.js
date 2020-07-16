@@ -10,6 +10,10 @@ $('.slider').each(function() {
   
   function move(newIndex) {
     advance();
+
+    if ($group.is(':animated') || currentIndex === newIndex) {
+      return;
+    }
     
     bulletArray[currentIndex].removeClass('active');
     bulletArray[newIndex].addClass('active');
