@@ -67,3 +67,11 @@ a.slideBtn {
   color: #428CC6;
   cursor: pointer;
 }
+
+.directionalNav {
+  height: 350px;
+  max-height: 900px;
+  margin: 0 auto;
+  position: relative;
+  top: -350px;
+}
