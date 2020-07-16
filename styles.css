@@ -75,3 +75,27 @@ a.slideBtn {
   position: relative;
   top: -350px;
 }
+
+.previousBtn {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  cursor: pointer;
+  height: 65px;
+  width: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.previousBtn {
+  left: 50px;
+}
+
+.previousBtn:hover {
+  opacity: 1;
+}
