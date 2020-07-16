@@ -76,7 +76,7 @@ a.slideBtn {
   top: -350px;
 }
 
-.previousBtn {
+.previousBtn, .nextBtn {
   top: 0;
   bottom: 0;
   margin: auto;
@@ -96,6 +96,10 @@ a.slideBtn {
   left: 50px;
 }
 
-.previousBtn:hover {
+.nextBtn {
+  right: 50px;
+}
+
+.previousBtn:hover, .nextBtn:hover {
   opacity: 1;
 }
