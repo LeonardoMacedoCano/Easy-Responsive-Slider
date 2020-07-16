@@ -73,6 +73,14 @@ $('.slider').each(function() {
     }
   });
 
+  $('.nextBtn').on('click', function() {
+    if (currentIndex < ($slides.length - 1)) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
+
   $.each($slides, function(index) {
     var $btn = $('<a class="slideBtn">&bull;</a>');
     
